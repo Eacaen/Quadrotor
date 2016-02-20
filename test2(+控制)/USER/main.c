@@ -2,67 +2,10 @@
 
 extern EularAngle EA;
 extern EularAngle EA_Origin;
-extern int Power;										//油门
-extern float KP;
-extern float TD;
-
-
-float cord[3];
-double Speed_Target=90;
 
 extern u8 NRF_flag;
 extern u8 tmp_buf[30];
 
-void msg_check_2()
-{
-	
-	char a[6][40];
-	int i=0,t=0,u=0,num=0;
-// 	if(NRF24L01_RxPacket(tmp_buf)==0)//一旦接收到信息,则显示出来.
-// 		{
-// // 				for(i=0;i<30;i++)
-// // 						{
-// // 							printf("tmp_buf[%d]==---->%d\r\n",i,tmp_buf[i]-48);		
-// // 						}		
-// 					NRF24L01_Write_Reg(FLUSH_RX,0xff);//清除RX FIFO寄存器 
-// 		}
-// 		
-// 		i=0;
-		
-	while(tmp_buf[t] != NULL)
-			{		
-					if(tmp_buf[t] != 32)
-					{
-						a[u][num]=tmp_buf[t];
-						num++;
-						t++;
-					}
-					while(tmp_buf[t] == 32)
-					{
-						t++;
-						if(tmp_buf[t] != 32)
-						{
-							a[u][num]='\0';
-							u++;
-							num=0;
-							break;
-						}
-
-					}
-					
-			}
-	Power = atof(a[0]);
-	KP = atof(a[1]);
-	TD= atof(a[2]);			
-	for(i=0;i<u+1;i++)
-		{
-			for(num = 0;num< 20;num++)a[i][num] = NULL;
-		}		
-	i=0;
-	t=0;
-	u=0;
-	num=0;
-}
 
 
  int main(void)
@@ -129,7 +72,7 @@ void TIM4_IRQHandler(void)   //TIM4中断
 	if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否:TIM 中断源 
 		{
 
-			PID_Deal(cord);
+// 			PID_Deal(cord);
 		}
 	TIM_ClearITPendingBit(TIM4, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
 

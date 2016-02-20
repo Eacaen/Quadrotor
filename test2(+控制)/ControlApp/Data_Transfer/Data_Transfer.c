@@ -3,7 +3,7 @@
 u8 tmp_buf[30]={0};
 T_RC_Data Rc_D;
 u8 NRF_flag = 0;
-extern int Power;
+extern PID PID_ROL,PID_PIT,PID_YAW,PID_ALT,PID_POS;
 void Data_Receive_Anl()
 {
 	static u8 i =0 ;
@@ -32,6 +32,19 @@ void Data_Receive_Anl()
 						Rc_D.YAW			= (vs16)(tmp_buf[8]<<8)|(tmp_buf[9]);
 						
 					}
+					
+				if( tmp_buf[0] == 0xff && tmp_buf[1] == 0xfe ) 	
+					{		
+					PID_ROL.P = (float)((vs16)(*(tmp_buf+2)<<8)|*(tmp_buf+3))/100;
+					PID_ROL.I = (float)((vs16)(*(tmp_buf+4)<<8)|*(tmp_buf+5))/1000;
+					PID_ROL.D = (float)((vs16)(*(tmp_buf+6)<<8)|*(tmp_buf+7))/100;
+					PID_PIT.P = (float)((vs16)(*(tmp_buf+8)<<8)|*(tmp_buf+9))/100;
+					PID_PIT.I = (float)((vs16)(*(tmp_buf+10)<<8)|*(tmp_buf+11))/1000;
+					PID_PIT.D = (float)((vs16)(*(tmp_buf+12)<<8)|*(tmp_buf+13))/100;
+					PID_YAW.P = (float)((vs16)(*(tmp_buf+14)<<8)|*(tmp_buf+15))/100;
+					PID_YAW.I = (float)((vs16)(*(tmp_buf+16)<<8)|*(tmp_buf+17))/100;
+					PID_YAW.D = (float)((vs16)(*(tmp_buf+18)<<8)|*(tmp_buf+19))/100;
+					}	
 					NRF_flag = 0;
 					TIM_Cmd(TIM4, ENABLE);
 					Nrf_Star;

@@ -18,8 +18,3 @@
 ..\OBJ\motor.o: ..\STM32F10x_FWLib\inc\stm32f10x_tim.h
 ..\OBJ\motor.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 ..\OBJ\motor.o: ..\STM32F10x_FWLib\inc\misc.h
-..\OBJ\motor.o: ..\Drivers\TIMER\timer.h
-..\OBJ\motor.o: ..\SYSTEM\usart\usart.h
-..\OBJ\motor.o: C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h
-..\OBJ\motor.o: ..\Drivers\PWM\pwm.h
-..\OBJ\motor.o: ..\Drivers\LED\led.h

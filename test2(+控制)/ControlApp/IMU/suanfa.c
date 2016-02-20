@@ -384,21 +384,7 @@ void suanfa( )
 	EA.Pitch -= EA_Origin.Pitch;
 	EA.Yaw   -= EA_Origin.Yaw  ;
 	
-	cord[0] =  EA.Roll;
-	cord[1] =  EA.Pitch;
-	cord[2] = 	0 ;
-// 	printf("%.2lf  %.2lf \r\n",cord[0],cord[1]);
-// 	cord[2] =  EA.Yaw ;
-//  	if (cord[2]<0){
-// 		cord[2] += 360;
-// 	 }
-// 		printf("%.2lf  %.2lf  %.2lf\r\n",cord[0],cord[1],cord[2]);	
 
-	if(fabs(cord[0]>30) || (fabs(cord[1])>30) )
-		{
-				Power = 0; 
-					KP = 0;TD = 0;
-		}
 }
 
  
