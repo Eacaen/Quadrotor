@@ -350,7 +350,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\USER;..\CORE;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\Drivers\EXTI;..\Drivers\HMC5883;..\Drivers\IIC;..\Drivers\Kalman;..\Drivers\KEY;..\Drivers\LED;..\Drivers\MPU6050;..\Drivers\NRF24L01;..\Drivers\PWM;..\Drivers\SPI;..\Drivers\TIMER;..\ControlApp\IMU;..\ControlApp\Motor;..\ControlApp\PID</IncludePath>
+              <IncludePath>..\USER;..\CORE;..\STM32F10x_FWLib\inc;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\Drivers\EXTI;..\Drivers\HMC5883;..\Drivers\IIC;..\Drivers\Kalman;..\Drivers\KEY;..\Drivers\LED;..\Drivers\MPU6050;..\Drivers\NRF24L01;..\Drivers\PWM;..\Drivers\SPI;..\Drivers\TIMER;..\ControlApp\IMU;..\ControlApp\Motor;..\ControlApp\PID;..\ControlApp\Data_Transfer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -630,6 +630,11 @@
               <FileName>PID.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\ControlApp\PID\PID.c</FilePath>
+            </File>
+            <File>
+              <FileName>Data_Transfer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ControlApp\Data_Transfer\Data_Transfer.c</FilePath>
             </File>
           </Files>
         </Group>
