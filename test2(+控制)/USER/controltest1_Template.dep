@@ -1,5 +1,5 @@
 Dependencies for Project 'controltest1', Target 'Template': (DO NOT MODIFY !)
-F (.\main.c)(0x56C80B28)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\main.o" --omf_browse "..\OBJ\main.crf" --depend "..\OBJ\main.d")
+F (.\main.c)(0x56D2959C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\main.o" --omf_browse "..\OBJ\main.crf" --depend "..\OBJ\main.d")
 I (allinclude.h)(0x56BB5B40)
 I (..\SYSTEM\sys\sys.h)(0x5055B57C)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -25,7 +25,7 @@ I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
 I (..\Drivers\TIMER\timer.h)(0x55D4296E)
 I (..\Drivers\PWM\pwm.h)(0x55DD88AE)
-I (..\ControlApp\PID\pid.h)(0x56C80072)
+I (..\ControlApp\PID\pid.h)(0x55F82F80)
 I (..\Drivers\NRF24L01\24l01.h)(0x55D2CCF8)
 I (..\Drivers\EXTI\exti.h)(0x55D18CF6)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\math.h)(0x50F96150)
@@ -34,8 +34,8 @@ I (..\Drivers\HMC5883\hmc.h)(0x55D54076)
 I (..\Drivers\MPU6050\mpu6050.h)(0x56BEC188)
 I (..\ControlApp\IMU\suanfa.h)(0x55D3EE1C)
 I (..\Drivers\IIC\myiic.h)(0x55A9CF92)
-I (..\ControlApp\Motor\motor.h)(0x56C80AE2)
-I (..\ControlApp\Data_Transfer\data_transfer.h)(0x56BEC5A2)
+I (..\ControlApp\Motor\motor.h)(0x55D3F6A6)
+I (..\ControlApp\Data_Transfer\data_transfer.h)(0x56D0688C)
 F (.\stm32f10x_it.c)(0x4EBEACB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_it.o" --omf_browse "..\OBJ\stm32f10x_it.crf" --depend "..\OBJ\stm32f10x_it.d")
 I (stm32f10x_it.h)(0x4D99A426)
 I (stm32f10x.h)(0x4D783CB4)
@@ -733,7 +733,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
 I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
-F (..\ControlApp\IMU\suanfa.c)(0x56C808C8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\suanfa.o" --omf_browse "..\OBJ\suanfa.crf" --depend "..\OBJ\suanfa.d")
+F (..\ControlApp\IMU\suanfa.c)(0x56D25DD2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\suanfa.o" --omf_browse "..\OBJ\suanfa.crf" --depend "..\OBJ\suanfa.d")
 I (..\SYSTEM\delay\delay.h)(0x55D68438)
 I (..\SYSTEM\sys\sys.h)(0x5055B57C)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -758,13 +758,13 @@ I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\math.h)(0x50F96150)
 I (..\Drivers\TIMER\timer.h)(0x55D4296E)
-I (..\ControlApp\PID\pid.h)(0x56C80072)
-I (..\ControlApp\Motor\motor.h)(0x56C80AE2)
+I (..\ControlApp\PID\pid.h)(0x55F82F80)
+I (..\ControlApp\Motor\motor.h)(0x55D3F6A6)
 I (..\Drivers\LED\led.h)(0x55D40094)
 I (..\Drivers\HMC5883\hmc.h)(0x55D54076)
 I (..\Drivers\PWM\pwm.h)(0x55DD88AE)
-F (..\ControlApp\Motor\motor.c)(0x56C80AE2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\motor.o" --omf_browse "..\OBJ\motor.crf" --depend "..\OBJ\motor.d")
-I (..\ControlApp\Motor\motor.h)(0x56C80AE2)
+F (..\ControlApp\Motor\motor.c)(0x56D265CC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\motor.o" --omf_browse "..\OBJ\motor.crf" --depend "..\OBJ\motor.d")
+I (..\ControlApp\Motor\motor.h)(0x55D3F6A6)
 I (..\SYSTEM\sys\sys.h)(0x5055B57C)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -782,45 +782,38 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-F (..\ControlApp\PID\PID.c)(0x56C8140E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\pid.o" --omf_browse "..\OBJ\pid.crf" --depend "..\OBJ\pid.d")
-I (..\USER\allinclude.h)(0x56BB5B40)
-I (..\SYSTEM\sys\sys.h)(0x5055B57C)
-I (..\USER\stm32f10x.h)(0x4D783CB4)
-I (..\CORE\core_cm3.h)(0x4D523B58)
-I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
-I (..\USER\system_stm32f10x.h)(0x4D783CAA)
-I (..\USER\stm32f10x_conf.h)(0x55D18CBA)
-I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
-I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
-I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-I (..\Drivers\LED\led.h)(0x55D40094)
-I (..\SYSTEM\delay\delay.h)(0x55D68438)
-I (..\Drivers\KEY\key.h)(0x50518AA2)
+I (..\Drivers\TIMER\timer.h)(0x55D4296E)
 I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
-I (..\Drivers\TIMER\timer.h)(0x55D4296E)
 I (..\Drivers\PWM\pwm.h)(0x55DD88AE)
-I (..\ControlApp\PID\pid.h)(0x56C80072)
-I (..\Drivers\NRF24L01\24l01.h)(0x55D2CCF8)
-I (..\Drivers\EXTI\exti.h)(0x55D18CF6)
-I (C:\MDK4.7\ARM\ARMCC\bin\..\include\math.h)(0x50F96150)
-I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdlib.h)(0x50F96150)
-I (..\Drivers\HMC5883\hmc.h)(0x55D54076)
-I (..\Drivers\MPU6050\mpu6050.h)(0x56BEC188)
+I (..\Drivers\LED\led.h)(0x55D40094)
+F (..\ControlApp\PID\PID.c)(0x56D00B16)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\pid.o" --omf_browse "..\OBJ\pid.crf" --depend "..\OBJ\pid.d")
+I (..\ControlApp\PID\pid.h)(0x55F82F80)
+I (..\SYSTEM\sys\sys.h)(0x5055B57C)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdint.h)(0x50F96150)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x55D18CBA)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415E)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\Drivers\TIMER\timer.h)(0x55D4296E)
+I (..\SYSTEM\usart\usart.h)(0x50517A82)
+I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
 I (..\ControlApp\IMU\suanfa.h)(0x55D3EE1C)
-I (..\Drivers\IIC\myiic.h)(0x55A9CF92)
-I (..\ControlApp\Motor\motor.h)(0x56C80AE2)
-I (..\ControlApp\Data_Transfer\data_transfer.h)(0x56BEC5A2)
-F (..\ControlApp\Data_Transfer\Data_Transfer.c)(0x56C81FCA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\data_transfer.o" --omf_browse "..\OBJ\data_transfer.crf" --depend "..\OBJ\data_transfer.d")
-I (..\ControlApp\Data_Transfer\data_transfer.h)(0x56BEC5A2)
+I (..\Drivers\MPU6050\mpu6050.h)(0x56BEC188)
+I (..\ControlApp\Motor\motor.h)(0x55D3F6A6)
+F (..\ControlApp\Data_Transfer\Data_Transfer.c)(0x56D295FA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer -I C:\MDK4.7\ARM\RV31\INC -I C:\MDK4.7\ARM\CMSIS\Include -I C:\MDK4.7\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\data_transfer.o" --omf_browse "..\OBJ\data_transfer.crf" --depend "..\OBJ\data_transfer.d")
+I (..\ControlApp\Data_Transfer\data_transfer.h)(0x56D0688C)
 I (..\SYSTEM\sys\sys.h)(0x5055B57C)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -846,7 +839,7 @@ I (..\SYSTEM\usart\usart.h)(0x50517A82)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\stdio.h)(0x50F96150)
 I (..\Drivers\TIMER\timer.h)(0x55D4296E)
 I (..\Drivers\PWM\pwm.h)(0x55DD88AE)
-I (..\ControlApp\PID\pid.h)(0x56C80072)
+I (..\ControlApp\PID\pid.h)(0x55F82F80)
 I (..\Drivers\NRF24L01\24l01.h)(0x55D2CCF8)
 I (..\Drivers\EXTI\exti.h)(0x55D18CF6)
 I (C:\MDK4.7\ARM\ARMCC\bin\..\include\math.h)(0x50F96150)
@@ -855,4 +848,4 @@ I (..\Drivers\HMC5883\hmc.h)(0x55D54076)
 I (..\Drivers\MPU6050\mpu6050.h)(0x56BEC188)
 I (..\ControlApp\IMU\suanfa.h)(0x55D3EE1C)
 I (..\Drivers\IIC\myiic.h)(0x55A9CF92)
-I (..\ControlApp\Motor\motor.h)(0x56C80AE2)
+I (..\ControlApp\Motor\motor.h)(0x55D3F6A6)

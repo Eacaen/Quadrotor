@@ -17,5 +17,7 @@ T_RC_Data;
 
 
 void Data_Receive_Anl(void);
+void lock();
+void un_lock();
 
 #endif

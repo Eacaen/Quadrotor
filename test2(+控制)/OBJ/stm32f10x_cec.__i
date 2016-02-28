@@ -1,5 +1,0 @@
--c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\Drivers\EXTI -I..\Drivers\HMC5883 -I..\Drivers\IIC -I..\Drivers\Kalman -I..\Drivers\KEY -I..\Drivers\LED -I..\Drivers\MPU6050 -I..\Drivers\NRF24L01 -I..\Drivers\PWM -I..\Drivers\SPI -I..\Drivers\TIMER -I..\ControlApp\IMU -I..\ControlApp\Motor -I..\ControlApp\PID -I..\ControlApp\Data_Transfer 
--I C:\MDK4.7\ARM\RV31\INC 
--I C:\MDK4.7\ARM\CMSIS\Include 
--I C:\MDK4.7\ARM\Inc\ST\STM32F10x 
--DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\OBJ\stm32f10x_cec.o" --omf_browse "..\OBJ\stm32f10x_cec.crf" --depend "..\OBJ\stm32f10x_cec.d" "..\STM32F10x_FWLib\src\stm32f10x_cec.c"

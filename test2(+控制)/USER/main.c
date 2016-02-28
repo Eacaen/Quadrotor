@@ -1,11 +1,17 @@
 #include "allinclude.h"
 
+
+float cord[3];
+
 extern EularAngle EA;
 extern EularAngle EA_Origin;
-
+extern int Power;	//油门
+extern float KP;
+extern float TD;
 extern u8 NRF_flag;
 extern u8 tmp_buf[30];
-
+extern u8 LOCK,UN_LOCK;
+extern float Target_x,Target_y,Target_yaw;		//目标值 
 
 
  int main(void)
@@ -40,16 +46,35 @@ extern u8 tmp_buf[30];
 	
 	TIM2_PWM_Init(999,9);  //PWM OUT
 	TIM3_Int_Init(0xffff,71);  //做计时器用
-	TIM4_Int_Init(500,71);	  		//PID调速中断
+
 	IIC_Init();	 
 	InitMPU6050();
 	Init_HMC5883();
 	
 	suanfa_GetOrigin(); //初始欧拉角 
-
+	
+	LOCK = 1;
+	UN_LOCK = 0;
+	
+	TIM4_Int_Init(49,7199);	  		//PID调速中断 放在最后初始化，防止打断角度校准
 	while(1){
+		if(LOCK)
+		{
+			lock();
+			LED0 = 0;delay_ms(200); LED0 = 1;
+			Power = 0;
+			Target_x = 0;
+			Target_y = 0;
+		}
+		
+		if(UN_LOCK)
+		{
 			suanfa();
-			printf("%.2lf  %.2lf  %.2lf\r\n",EA.Roll,EA.Pitch,EA.Yaw);	 
+			Data_Receive_Anl();
+		}
+		
+// 		printf("--p\r\n");
+// 			printf("%.2lf  %.2lf  %.2lf\r\n",EA.Roll,EA.Pitch,EA.Yaw);	 
 			
 					}
 }
@@ -61,6 +86,7 @@ void EXTI9_5_IRQHandler(void)
 			
 			TIM_Cmd(TIM4, DISABLE);
 			NRF_flag= 1;
+// 			printf("%d\r\n",NRF_flag);
 			Nrf_Stop;
 	}
 	LED2 =!LED2;
@@ -71,8 +97,9 @@ void TIM4_IRQHandler(void)   //TIM4中断
 {
 	if (TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否:TIM 中断源 
 		{
-
-// 			PID_Deal(cord);
+// 			Data_Receive_Anl();
+			PID_Deal(cord);
+// 			printf("p\r\n");
 		}
 	TIM_ClearITPendingBit(TIM4, TIM_IT_Update  );  //清除TIMx的中断待处理位:TIM 中断源 
 
