@@ -1,3 +1,4 @@
 # Quadrotor
 Base on STM32F10X
-Can't fly
+Can't fly quickly
+# PID + IMU
